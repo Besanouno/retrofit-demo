@@ -13,16 +13,13 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TaskService taskService;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.taskService = new TaskService();
 
         initializeFields(this);
-        taskService.getAction(this);
+        // TODO LOAD LIST
     }
 
     private void initializeFields(final Activity activity) {
@@ -36,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 TextView uuid = activity.findViewById(R.id.uuid);
                 if (!uuid.getText().toString().isEmpty()) {
-                    taskService.postAction(activity, uuid.getText().toString());
+                    // TODO UPDATE TASK
                 } else {
-                    taskService.putAction(activity);
+                    // TODO CREATE NEW
                 }
                 clearFields(activity);
             }

@@ -57,7 +57,7 @@ public class TaskAdapter extends BaseAdapter {
         remove.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new TaskService().deleteAction(activity, task.getUuid());
+                // TODO DELETE
             }
         });
         final ImageButton edit = itemView.findViewById(R.id.edit);
