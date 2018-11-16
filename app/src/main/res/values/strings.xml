@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RetrofitDemo</string>
+    <string name="prompt_title">Tytuł</string>
+    <string name="prompt_description">Opis</string>
+    <string name="send">Wyślij</string>
+    <string name="remove">U</string>
+    <string name="edit">E</string>
+    <string name="clear">Wyczyść</string>
+</resources>
